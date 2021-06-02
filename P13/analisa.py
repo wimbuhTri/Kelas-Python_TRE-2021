@@ -25,14 +25,13 @@ def read_using_numpy():
 		index += 1
 	return product.reshape([5,5])
 
-#z = read_using_numpy()
 z = read_using_csv()
 X = np.arange(5)
 Y = np.arange(5)
 X, Y = np.meshgrid(X, Y)
 plt.figure(figsize = [8,5.5])
 ax = plt.axes(projection="3d")
-ax.plot_surface(X,Y,z, cmap=cm.coolwarm)
+xax.plot_surface(X,Y,z, cmap=cm.coolwarm)
 ax.set_title('Anomali pada Grid')
 ax.set(xlabel='sumbu-x', ylabel='sumbu-y', zlabel='standar deviasi')
 plt.show()
